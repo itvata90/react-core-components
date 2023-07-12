@@ -1,0 +1,185 @@
+@import 'src/styles/colors';
+@import 'src/styles/fonts';
+
+.wrapperLeft {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  border-left: 1px solid $border-color;
+}
+
+.paddingComponent {
+  padding: 15px;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+//textHeader----------------------------------------
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 14px;
+  margin-bottom: 6px;
+}
+.iconWrapper {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid $warning;
+  background-color: $background-warning;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.iconWarning {
+  position: absolute;
+  color: $warning;
+  top: 1px;
+  left: 3px;
+}
+
+.headerText {
+  // width: 196px;
+  height: 25px;
+  font-style: $font-style;
+  font-weight: $font-weight-heavy;
+  font-size: $font-size-general-header;
+  line-height: $line-height-normal;
+  color: $text-header;
+}
+
+//Accordion----------------------------------
+
+.accordionSummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordionSummaryIcon {
+  margin-right: 13.5px;
+}
+
+.accordionSummaryIconActive {
+  color: $success;
+}
+
+.accordionSummaryIconWarning {
+  color: $warning;
+}
+
+.accordionSummaryText {
+  font-style: $font-style;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-label;
+  line-height: $line-height-normal;
+  color: $text-context;
+}
+
+.accordionContent {
+  display: flex;
+  align-items: center;
+  padding-left: 37.5px;
+}
+
+.accordionContentTextLabel {
+  width: 46px;
+  height: 20px;
+  font-style: $font-style;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-label;
+  line-height: $line-height-normal;
+  color: $text-secondary;
+}
+
+.accordionContentTextValue {
+  font-style: $font-style;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-label;
+  line-height: $line-height-normal;
+  color: $text-context;
+}
+
+.active {
+  color: $active;
+}
+
+.warning {
+  color: $warning;
+}
+
+.container_stepbar {
+  min-height: 58px;
+  height: auto;
+  background: $background-primary;
+  box-shadow: 0px 2px 6px rgba(11, 11, 79, 0.08);
+}
+
+.breadcrumbs_process_bar {
+  font-weight: $font-weight-heavy !important;
+  font-size: $font-size-header !important;
+  line-height: $line-height-normal !important;
+  color: $text-context !important;
+  // margin-left: 24px !important;
+}
+
+.container_button_stepbar {
+  min-height: 58px !important;
+  width: auto;
+}
+
+.stepbar_button {
+  width: 150px !important;
+  height: 32px !important;
+  font-size: $font-size-button !important;
+  line-height: $line-height-normal !important;
+  text-transform: uppercase !important;
+  font-weight: $font-weight-heavy !important;
+}
+
+.warning_button {
+  border: 1px solid $error !important;
+  border-radius: 4px !important;
+  color: $error !important;
+  font-style: $font-style !important;
+}
+
+.default_button {
+  border: 1px solid $primary !important;
+  border-radius: 4px !important;
+  color: $primary !important;
+  font-style: $font-style !important;
+  font-size: $font-size-button !important;
+}
+
+.primary_button {
+  box-sizing: border-box !important;
+  background: $primary !important;
+  border-radius: 4px !important;
+  color: $background-primary !important;
+  font-style: $font-style !important;
+  font-size: $font-size-button !important;
+}
+
+// Text Field
+.large input {
+  width: 180px;
+  height: 32px;
+}
+
+.medium input {
+  width: 142px;
+  height: 32px;
+}
+
+// Number Field
+.numberNoSpin {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}

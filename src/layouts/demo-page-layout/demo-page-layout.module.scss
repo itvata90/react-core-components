@@ -1,0 +1,35 @@
+.demo-page-layout-container {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main main';
+  /* background-color: #2196f3; */
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 64px 1fr;
+}
+
+.demo-page-layout-menu {
+  position: relative !important;
+  grid-area: menu;
+  min-width: 250px !important;
+  width: 250px !important;
+  overflow: hidden;
+  min-height: 100vh;
+  border-right: 1px solid var(--bs-border-color);
+}
+.demo-page-layout-header {
+  grid-area: header;
+  min-height: 64px;
+}
+.demo-page-layout-menu > * {
+  position: fixed !important;
+  padding: 1rem;
+}
+.demo-page-layout-main {
+  grid-area: main;
+}
+
+.demo-page-layout-gutter {
+  --bs-gutter-x: 1rem !important;
+}

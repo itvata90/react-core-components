@@ -1,0 +1,38 @@
+.default-layout-container {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu main';
+  /* background-color: #2196f3; */
+  grid-template-columns: 1fr 11fr;
+  grid-template-rows: 64px 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 'calc(100vw - 24px)';
+}
+
+.default-layout-menu {
+  position: relative !important;
+  grid-area: menu;
+  min-width: 250px !important;
+  width: 250px !important;
+  overflow: hidden;
+  min-height: 100vh;
+  border-right: 1px solid var(--bs-border-color);
+}
+.default-layout-header {
+  grid-area: header;
+  min-height: 64px;
+}
+.default-layout-menu > * {
+  position: fixed !important;
+  padding: 1rem;
+}
+.default-layout-main {
+  grid-area: main;
+}
+
+.default-layout-gutter {
+  --bs-gutter-x: 1rem !important;
+}
